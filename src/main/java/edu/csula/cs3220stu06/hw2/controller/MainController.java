@@ -33,7 +33,7 @@ public class MainController {
         return "root";
     }
 
-    @RequestMapping("/SoccerWeb2024/players")
+    @RequestMapping("/players")
     public String player(Model model){
         model.addAttribute("entries",playRepo.findAll());
         return "players";
