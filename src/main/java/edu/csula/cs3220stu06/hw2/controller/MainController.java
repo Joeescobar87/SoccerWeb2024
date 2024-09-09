@@ -23,17 +23,17 @@ public class MainController {
         this.teamRepo=tRepo;
     }
 
-    @RequestMapping("/")
+    @RequestMapping("SoccerWeb2024/")
     public String index(Model model) {
         return "root";
     }
 
-    @RequestMapping("/root")
+    @RequestMapping("/index")
     public String home(){
-        return "root";
+        return "index";
     }
 
-    @RequestMapping("/players")
+    @RequestMapping("SoccerWeb2024/players")
     public String player(Model model){
         model.addAttribute("entries",playRepo.findAll());
         return "players";
