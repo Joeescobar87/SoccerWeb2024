@@ -33,7 +33,7 @@ public class MainController {
         return "index";
     }
 
-    @RequestMapping("SoccerWeb2024/players")
+    @RequestMapping("/SoccerWeb2024/players")
     public String player(Model model){
         model.addAttribute("entries",playRepo.findAll());
         return "players";
